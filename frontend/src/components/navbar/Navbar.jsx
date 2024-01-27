@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 import "./navbar.scss";
 // import logo from "../../assets/logo.png";
 // import cart_icon form ""
@@ -20,7 +20,7 @@ export const Navbar = () => {
             setMenu("shop");
           }}
         >
-          Shop
+          <Link to="/">Shop</Link>
           {menu === "shop" ? <hr /> : ""}
         </li>
         <li
@@ -28,7 +28,7 @@ export const Navbar = () => {
             setMenu("menu");
           }}
         >
-          Menu
+          <Link to="/mens">Menu</Link>
           {menu === "menu" ? <hr /> : ""}
         </li>
         <li
@@ -36,7 +36,7 @@ export const Navbar = () => {
             setMenu("women");
           }}
         >
-          Women
+          <Link to="/womens">Women</Link>
           {menu === "women" ? <hr /> : ""}
         </li>
         <li
@@ -44,12 +44,14 @@ export const Navbar = () => {
             setMenu("kids");
           }}
         >
-          Kids
+          <Link to="/kids">Kids</Link>
           {menu === "kids" ? <hr /> : ""}
         </li>
       </ul>
       <div className="nav-login-cart">
-        <button>Login</button>
+        <Link to="/login">
+          <button>Login</button>
+        </Link>
         <img src={cart_icon} alt="" />
         <div className="nav-cart-count">1</div>
       </div>
