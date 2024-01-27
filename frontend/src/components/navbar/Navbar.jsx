@@ -14,27 +14,21 @@ export const Navbar = () => {
       </div>
       <ul className="nav-menu">
         <li onClick={() => setMenu("shop")}>
-          <NavLink to="/" exact activeClassName="active-link">
+          <NavLink to="/" end>
             Shop
           </NavLink>
           {menu === "shop" && <hr />}
         </li>
         <li onClick={() => setMenu("menu")}>
-          <NavLink to="/mens" activeClassName="active-link">
-            Menu
-          </NavLink>
+          <NavLink to="/mens">Menu</NavLink>
           {menu === "menu" && <hr />}
         </li>
         <li onClick={() => setMenu("women")}>
-          <NavLink to="/womens" activeClassName="active-link">
-            Women
-          </NavLink>
+          <NavLink to="/womens">Women</NavLink>
           {menu === "women" && <hr />}
         </li>
         <li onClick={() => setMenu("kids")}>
-          <NavLink to="/kids" activeClassName="active-link">
-            Kids
-          </NavLink>
+          <NavLink to="/kids">Kids</NavLink>
           {menu === "kids" && <hr />}
         </li>
       </ul>
