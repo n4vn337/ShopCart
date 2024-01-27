@@ -40,6 +40,19 @@
       border-radius: 10px;
       background-color: #ff4141;
     }
+
+    // .active-link {
+    //   text-decoration: none;
+
+    // }
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        text-decoration: none; // Remove underline on hover
+      }
+    }
   }
 
   .nav-login-cart {
