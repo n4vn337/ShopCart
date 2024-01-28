@@ -3,3 +3,4 @@ export { Hero } from "./hero/Hero";
 export { Item } from "./item/Item";
 export { Popular } from "./popular/Popular";
 export { Offers } from "./offers/Offers";
+export { NewCollections } from "./newCollections/NewCollections";

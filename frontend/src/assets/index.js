@@ -8,3 +8,4 @@ export { default as exclusive_img } from "./exclusive_image.png";
 
 // js exports
 export { default as data_product } from "./data.js";
+export { default as new_collections } from "./new_collections.js";
