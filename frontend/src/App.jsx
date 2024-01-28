@@ -1,5 +1,5 @@
 import "./App.scss";
-import { Navbar } from "./components";
+import { Footer, Navbar } from "./components";
 import { AllRoutes } from "./routes/AllRoutes";
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
     <div>
       <Navbar />
       <AllRoutes />
+      <Footer />
     </div>
   );
 }

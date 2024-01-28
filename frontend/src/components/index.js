@@ -5,3 +5,4 @@ export { Popular } from "./popular/Popular";
 export { Offers } from "./offers/Offers";
 export { NewCollections } from "./newCollections/NewCollections";
 export { NewsLetter } from "./newsLetter/NewsLetter";
+export { Footer } from "./footer/Footer";
