@@ -14,6 +14,8 @@ export { default as womens_banner } from "./banner_women.png";
 export { default as kids_banner } from "./banner_kids.png";
 export { default as dropDown } from "./dropdown_icon.png";
 export { default as breadcrum_arrow } from "./breadcrum_arrow.png";
+export { default as start_icon } from "./star_icon.png";
+export { default as star_dull_icon } from "./star_dull_icon.png";
 
 // js exports
 export { default as data_product } from "./data.js";
