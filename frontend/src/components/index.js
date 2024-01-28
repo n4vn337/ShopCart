@@ -6,3 +6,4 @@ export { Offers } from "./offers/Offers";
 export { NewCollections } from "./newCollections/NewCollections";
 export { NewsLetter } from "./newsLetter/NewsLetter";
 export { Footer } from "./footer/Footer";
+export { Breadcrum } from "./breadcrum/Breadcrum";

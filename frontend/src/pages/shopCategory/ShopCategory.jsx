@@ -29,7 +29,7 @@ export const ShopCategory = (props) => {
       </div>
       <div className="shopcategory-products">
         {all_products.map((item, i) => {
-          console.log(`${props.category} ${item.category}`);
+          // console.log(`${props.category} ${item.category}`);
           return props.category === item.category ? (
             <Item
               key={i}

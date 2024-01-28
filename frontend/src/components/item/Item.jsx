@@ -1,10 +1,13 @@
 import PropTypes from "prop-types";
 import "./item.scss";
+import { Link } from "react-router-dom";
 
 export const Item = (props) => {
   return (
     <div className="item">
-      <img src={props.image} alt="" />
+      <Link to={`/product/${props.id}`}>
+        <img src={props.image} alt="" />
+      </Link>
       <p>{props.name}</p>
       <div className="item-prices">
         <div className="item-price-new">${props.new_price}</div>
@@ -19,4 +22,5 @@ Item.propTypes = {
   name: PropTypes.string.isRequired,
   new_price: PropTypes.number.isRequired,
   old_price: PropTypes.number.isRequired,
+  id: PropTypes.number,
 };
