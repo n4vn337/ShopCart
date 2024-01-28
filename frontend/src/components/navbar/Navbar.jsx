@@ -20,11 +20,11 @@ export const Navbar = () => {
           {menu === "shop" && <hr />}
         </li>
         <li onClick={() => setMenu("menu")}>
-          <NavLink to="/mens">Menu</NavLink>
+          <NavLink to="/mens">Mens</NavLink>
           {menu === "menu" && <hr />}
         </li>
         <li onClick={() => setMenu("women")}>
-          <NavLink to="/womens">Women</NavLink>
+          <NavLink to="/womens">Womens</NavLink>
           {menu === "women" && <hr />}
         </li>
         <li onClick={() => setMenu("kids")}>

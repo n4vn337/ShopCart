@@ -9,7 +9,12 @@ export { default as footer_logo } from "./logo_big.png";
 export { default as insta } from "./instagram_icon.png";
 export { default as pinterest } from "./pintester_icon.png";
 export { default as whatsapp } from "./whatsapp_icon.png";
+export { default as mens_banner } from "./banner_mens.png";
+export { default as womens_banner } from "./banner_women.png";
+export { default as kids_banner } from "./banner_kids.png";
+export { default as dropDown } from "./dropdown_icon.png";
 
 // js exports
 export { default as data_product } from "./data.js";
 export { default as new_collections } from "./new_collections.js";
+export { default as all_products } from "./all_product.js";
