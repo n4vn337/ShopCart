@@ -1,10 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.scss";
 import { logo, cart_icon } from "../../assets";
 
 export const Navbar = () => {
   const [menu, setMenu] = useState("shop");
+
+  useEffect(() => {
+    // Update the active menu based on the current route
+    const currentPath = window.location.pathname;
+    if (currentPath === "/mens") {
+      setMenu("mens");
+    } else if (currentPath === "/womens") {
+      setMenu("women");
+    } else if (currentPath === "/kids") {
+      setMenu("kids");
+    } else {
+      setMenu("shop");
+    }
+  }, []);
 
   return (
     <div className="navbar">
@@ -19,9 +33,9 @@ export const Navbar = () => {
           </NavLink>
           {menu === "shop" && <hr />}
         </li>
-        <li onClick={() => setMenu("menu")}>
+        <li onClick={() => setMenu("mens")}>
           <NavLink to="/mens">Mens</NavLink>
-          {menu === "menu" && <hr />}
+          {menu === "mens" && <hr />}
         </li>
         <li onClick={() => setMenu("women")}>
           <NavLink to="/womens">Womens</NavLink>
