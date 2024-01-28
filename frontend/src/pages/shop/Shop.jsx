@@ -1,12 +1,12 @@
-import { Hero } from "../../components";
-import { Popular } from "../../components";
+import { Hero, Offers, Popular } from "../../components";
 import "./shop.scss";
 export const Shop = () => {
   return (
     <div>
-      Shop
+      {/* Shop */}
       <Hero />
       <Popular />
+      <Offers />
     </div>
   );
 };
