@@ -1,5 +1,10 @@
-import { Hero, Offers, Popular } from "../../components";
-import { NewCollections } from "../../components/newCollections/NewCollections";
+import {
+  Hero,
+  NewsLetter,
+  Offers,
+  Popular,
+  NewCollections,
+} from "../../components";
 import "./shop.scss";
 export const Shop = () => {
   return (
@@ -8,6 +13,7 @@ export const Shop = () => {
       <Popular />
       <Offers />
       <NewCollections />
+      <NewsLetter />
     </div>
   );
 };
