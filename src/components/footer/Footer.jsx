@@ -10,7 +10,7 @@ export const Footer = () => {
       </div>
       <ul className="footer-links">
         <li>Company</li>
-        <li>Producst</li>
+        <li>Products</li>
         <li>Offices</li>
         <li>About</li>
         <li>Contact</li>

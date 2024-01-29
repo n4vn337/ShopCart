@@ -2,9 +2,12 @@ import "./prodDisplay.scss";
 import PropTypes from "prop-types";
 
 import { start_icon, star_dull_icon } from "../../assets";
+import { useContext } from "react";
+import { ShopContext } from "../../context/ShopContext";
 
 export const ProdDisplay = (props) => {
   const { product } = props;
+  const { addToCart } = useContext(ShopContext);
   return (
     <div className="product-display">
       <div className="display-left">
@@ -47,7 +50,13 @@ export const ProdDisplay = (props) => {
             <span>XXL</span>
           </div>
         </div>
-        <button>Add to Cart</button>
+        <button
+          onClick={() => {
+            addToCart(product.id);
+          }}
+        >
+          Add to Cart
+        </button>
         <p className="category">
           <span>Category: </span>
           Women, T-Shirt, Crop Top
@@ -67,6 +76,7 @@ ProdDisplay.propTypes = {
     image: PropTypes.string.isRequired,
     old_price: PropTypes.number.isRequired,
     new_price: PropTypes.number.isRequired,
+    id: PropTypes.number,
     // Add other properties as needed
   }).isRequired,
 };

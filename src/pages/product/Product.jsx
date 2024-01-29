@@ -12,7 +12,7 @@ import {
 export const Product = () => {
   const { all_products } = useContext(ShopContext);
   const { productId } = useParams();
-  console.log("productId:", productId);
+  // console.log("productId:", productId);
 
   let product;
   for (const item of all_products) {

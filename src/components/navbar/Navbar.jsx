@@ -1,10 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.scss";
 import { logo, cart_icon } from "../../assets";
+import { ShopContext } from "../../context/ShopContext";
 
 export const Navbar = () => {
   const [menu, setMenu] = useState("shop");
+  const { getTotalCartItems } = useContext(ShopContext);
 
   useEffect(() => {
     // Update the active menu based on the current route
@@ -53,7 +55,7 @@ export const Navbar = () => {
         <Link to="/cart">
           <img src={cart_icon} alt="Shopping Cart" />
         </Link>
-        <div className="nav-cart-count">1</div>
+        <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
     </div>
   );

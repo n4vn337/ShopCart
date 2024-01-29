@@ -10,3 +10,4 @@ export { Breadcrum } from "./breadcrum/Breadcrum";
 export { ProdDisplay } from "./prodDisplay/ProdDisplay";
 export { Description } from "./description/Description";
 export { RelatedProd } from "./relatedProd/RelatedProd";
+export { CartItems } from "./cartItems/CartItems";
