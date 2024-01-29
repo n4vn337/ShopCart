@@ -9,3 +9,4 @@ export { Footer } from "./footer/Footer";
 export { Breadcrum } from "./breadcrum/Breadcrum";
 export { ProdDisplay } from "./prodDisplay/ProdDisplay";
 export { Description } from "./description/Description";
+export { RelatedProd } from "./relatedProd/RelatedProd";

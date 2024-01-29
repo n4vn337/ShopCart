@@ -2,7 +2,12 @@ import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { ShopContext } from "../../context/ShopContext";
 import "./product.scss";
-import { Breadcrum, Description, ProdDisplay } from "../../components/";
+import {
+  Breadcrum,
+  Description,
+  ProdDisplay,
+  RelatedProd,
+} from "../../components/";
 
 export const Product = () => {
   const { all_products } = useContext(ShopContext);
@@ -22,6 +27,7 @@ export const Product = () => {
       <Breadcrum product={product} />
       <ProdDisplay product={product} />
       <Description />
+      <RelatedProd />
     </div>
   );
 };
